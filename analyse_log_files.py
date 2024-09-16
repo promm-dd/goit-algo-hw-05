@@ -66,3 +66,6 @@ def main():
 if __name__ == "__main__":
     main()
     
+    
+    #python3  analyse_log_files.py log_file.log
+    #python3 analyse_log_files.py log_file.log ERROR
