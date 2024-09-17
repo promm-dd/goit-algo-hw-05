@@ -1,4 +1,4 @@
-def caching_fibonacci(n):
+def caching_fibonacci():
     fib_cache={}
     def fibonacci(n):
         if n in fib_cache: # если  n  в кеше, то возвращаем значение фиб
@@ -13,9 +13,9 @@ def caching_fibonacci(n):
         else:
             fib_cache[n]= fibonacci(n-1) + fibonacci(n-2)
             return fib_cache[n]
-    return fibonacci(n)
+    return fibonacci #возвр внутренню функцию  без вызова
 
-fib= caching_fibonacci
+fib= caching_fibonacci() #создаем функц фибон с кешированием
 print(fib(10))
 print(fib(15))
 
